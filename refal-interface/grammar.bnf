@@ -1,0 +1,22 @@
+//Грамматика
+//
+//В грамматике ниже фигурные скобки означают повторение ноль или более раз,
+//квадратные скобки — необязательный элемент.
+//Строки в двойных кавычках и имена сплошными заглавными соответствуют терминальным символам,
+//имена в CamelCase (Function) — нетерминальным.
+//
+//non-terminal: Program, Function, Body, Sentences, Sentence, Pattern, PatternTerm;
+//terminal:     "{", "}", "(", ")", ";", "=", IDENT, CONST, RESULT, EVAR, TVAR;
+//
+//EBNF:
+
+Program ::= Function {Function}
+
+Function ::= IDENT Body
+Body ::= "{" Sentences "}"
+
+Sentences ::= Sentence ";" { Sentence ";"}
+Sentence ::= Pattern RESULT
+
+Pattern ::= {PatternTerm}
+PatternTerm ::= CONST | EVAR | TVAR | "(" Pattern ")"

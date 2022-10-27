@@ -1,0 +1,11 @@
+Pal {
+    = True;
+    t.x = True;
+    t.x e.y t.x = <Pal e.y>;
+    'revol' 've' 'r' = False;
+}
+
+Go {
+    = <Prout <Pal 'abracacarba'> >;
+    = <Prout <Pal 'revolver'> >;
+}
