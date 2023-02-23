@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PL-embedding.iml" filepath="$PROJECT_DIR$/.idea/PL-embedding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inclusion-algorithm/inclusion-algorithm.iml" filepath="$PROJECT_DIR$/inclusion-algorithm/inclusion-algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refal-interface/refal-interface.iml" filepath="$PROJECT_DIR$/refal-interface/refal-interface.iml" />
+    </modules>
+  </component>
+</project>
