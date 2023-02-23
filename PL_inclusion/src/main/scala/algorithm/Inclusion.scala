@@ -67,7 +67,7 @@ object Inclusion {
       val regex = Regex.compile(util.Arrays.asList(PiReg, PxReg))
       val res = regex.get(1).isSubsetOf(regex.get(0))
 //      println(s"\tL( $Px ) ⊆ (${Pi.map(e => s"L( $e )").mkString(" ⋃ ")})")
-//      println(s"\t$PxReg ⊆ $PiReg")
+      println(s"\t$PxReg ⊆ $PiReg")
 //      println(s"\t$res")
       res &&
         ((limit == depth) || subsetRec(Pi, Px, limit + 1, depth))
